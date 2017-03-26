@@ -17,6 +17,7 @@ def get_root(fname):
 def get_authors(root):
     authors = []
     for author in root.findall('./fm/bibl/aug/au'):
+        '''
         fnm = author.find('fnm')
         if fnm is not None:
             fnm = fnm.text
@@ -26,6 +27,7 @@ def get_authors(root):
         email = author.find('email')
         if email is not None:
             email = email.text
+        '''
         data = {
                 "fnm": fnm,
                 "snm": snm,
@@ -33,7 +35,9 @@ def get_authors(root):
         }
 
         # YOUR CODE HERE
-
+        data["fnm"] = author.find('./fnm').text
+        data["snm"] = author.find('./snm').text
+        data["email"] = author.find('./email').text
         authors.append(data)
 
     return authors
