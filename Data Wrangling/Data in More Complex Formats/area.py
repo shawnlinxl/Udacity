@@ -22,7 +22,8 @@ CITIES = 'cities.csv'
 
 def strip_pair(pair):
     # strips pairs like "{a|b}""
-    pair = pair[1:(len(pair)-1)]
+    pair = pair.replace("{","")
+    pair = pair.replace("}","")
     pair = pair.split("|")
     return pair
 
