@@ -66,7 +66,15 @@ Now try to run your query again.  You've got data... NICE!
 ##  When you're ready, run you query to CREATE and populate the InvoiceLine table 
 ##  using data from the InvoiceLine.sql file. 
 
-QUERY='''CREATE ...
+QUERY='''CREATE TABLE InvoiceLine
+( InvoiceLineID INTEGER Primary Key,
+  InvoiceID INTEGER,
+  TrackId INTEGER,
+  UnitPrice REAL,
+  Quantity INTEGER,
+  FOREIGN KEY (InvoiceId) REFERENCES Invoice (InvoiceId),
+  FOREIGN KEY (TrackId) REFERENCES Track (TrackId) 
+)
 '''
 
 '''
