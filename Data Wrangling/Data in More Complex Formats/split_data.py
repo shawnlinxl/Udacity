@@ -34,7 +34,7 @@ def split_file(filename):
     pat = '<?xml'  # pattern that splits files
     outfile_iter = files(filename)
 
-    with open(filename,) as infile:
+    with open(filename,'r') as infile:
         for line in infile:
             if pat in line:
                 outfile = next(outfile_iter) # new file   
