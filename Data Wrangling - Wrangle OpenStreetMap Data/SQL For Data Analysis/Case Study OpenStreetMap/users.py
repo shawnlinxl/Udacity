@@ -12,14 +12,15 @@ The function process_map should return a set of unique user IDs ("uid")
 """
 
 def get_user(element):
-    return
+    return element.attrib['uid']
 
 
 def process_map(filename):
     users = set()
     for _, element in ET.iterparse(filename):
-        pass
-
+        key = 'uid'
+        if key in element.attrib:
+            users.add(get_user(element))
     return users
 
 
