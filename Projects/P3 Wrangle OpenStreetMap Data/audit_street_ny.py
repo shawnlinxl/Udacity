@@ -5,7 +5,7 @@ import pprint
 import string
 
 OSMFILE = "C:/Users/Lenovo/Documents/GitHub/new-york_new-york.OSM"
-LOGFILE = "log.txt"
+LOGFILE = "street_log.txt"
 street_type_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
 
 expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road",
