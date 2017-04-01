@@ -1,0 +1,452 @@
+Clinton:Clinton
+1st:1st
+1st:1st
+1st:1st
+303:Route 303
+Willoughby:Willoughby
+Vanderbilt:Vanderbilt
+46:Rt 46
+42nd:West 42nd
+Remsen:Remsen
+Springfield:Springfield
+US-1:US-1
+Gratta:Gratta
+2N:400th West 20th St., Suite 2N
+NJ):US 1 (NJ)
+SOUTH:US HWY 1 SOUTH
+SOUTH:US HWY 1 SOUTH
+Ballfields:John Golden Ballfields
+north:route 35 north
+NY:54th W 39th St New York, NY
+34:Route 34
+27th:W 27th
+500:Main St., Suite 500
+17:Route 17
+Woodside:Woodside
+120:H Highway 34 #120
+109:State Highway 109
+46:US Highway 46
+1801:505th 8th Avenue Suite 1801
+208:200 Perrine Road; Suite 208
+29th:29th
+Macdougal:Macdougal
+bus_stop:bus_stop
+Vanderbilt:Vanderbilt
+1:North US Highway 1
+1B:East 64th Street Ste 1B
+22:US 22
+Hill:Fort George Hill
+John:Avenue Saint John
+John:Avenue Saint John
+John:Avenue Saint John
+John:Avenue Saint John
+John:Avenue Saint John
+John:Avenue Saint John
+John:Avenue Saint John
+John:Avenue Saint John
+Bush:Ploughmans Bush
+Bush:Ploughmans Bush
+Warren:Warren
+Slip:Coenties Slip
+Slip:Coenties Slip
+Atrium:Broadway Atrium
+Slip:Old Slip
+Slip:Old Slip
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+Slip:Peck Slip
+306:West 30th Street Suite 306
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Row:Park Row
+Finest:Avenue Of The Finest
+Slip:Pike Slip
+Slip:Rutgers Slip
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+Rico:Avenue Of Puerto Rico
+41st:41st
+4B:Union Avenue 4B
+Camp:Pennyfield Camp
+Camp:Pennyfield Camp
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Malba:Center Drive Malba
+Douglaston:Center Drive Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Hillside Avenue Douglaston
+Douglaston:Center Drive Douglaston
+Island:Randalls Island
+Island:Wards Island
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Rockaways:Hillside Avenue Rockaways
+Bridge:Harlem River Park Bridge
+398:Rockland Ctr #398
+398:Rockland Ctr #398
+35:Route 35
+2b:Woodbury Rd Ste 2b
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+Run:Deer Run
+1:Burt Drive ste 1
+426:186th Street Ste 426
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+Farm:Sky Meadow Farm
+36:NJ Route 36
+36:NJ Route 36
+36:NJ Route 36
+35:NJ Route 35
+35:NJ Route 35
+35:Route 35
+35:Route 35
+35:Route 35
+35:Route 35
+35:Route 35
+35:Route 35
+35:Route 35
+35:Route 35
+1:Grand Concourse #1
+Bushwick:Bushwick
+861:861
+17:New Jersey 17
+Jefferson:North Jefferson
+1:New Jersey 17 N #1
+1:New Jersey 17 N #1
+10:Nwe Jersey 10
+Chips:Potato Chips
+Floor):Manhattan Avenue (2nd Floor)
+Slip:Old Slip
+Slip:Old Slip
+3:Hanover Square #3
+1:U.S. 1
+1:U.S. 1
+1:U.S. 1
+1:U.S. 1
+1:U.S. 1
+1:U.S. 1
+lane:Post lane
+lane:Post lane
+Ctr:Harborside Fin Ctr
+10024:West 80th Street NYC 10024
+Fulton:Old Fulton
+Fulton:Old Fulton
+Track:Track
+NJ-36:NJ-36
+35:NJ 35
+36:NJ 36
+NJ-36:NJ-36
+35:NJ 35
+35:NJ 35
+Row:Park Row
+2:55 Riverwalk Pl #2
+NY:405 West 23rd Street, New York, NY
+11217:305 Schermerhorn St., Brooklyn, NY 11217
+Row:Park Row
+307:N Broadway #307
+3:Maple Ave #3
+506:Broadway #506
+Pike):US 1 (Brunswick Pike)
+C:2nd Street #C
+236:Purchase Street Suite 236
+50th:50th
+Americas:Avenue of the Americas
+
+1:Graham Avenue #1
+500:Old Country Road, Suite 500
+CT):I 95 (CT)
+NJ-36:NJ-36
+3:Old Route 3
+Ln:Jules Ln
+C:Stewart Ave #C
+Africa:Avenue of Africa
+Highline:Highline
+Floor:Wall Street 12th Floor
+Unidos:519 9th Ave, New York, NY 10018, Estados Unidos
+17:State Route 17
+3B:Liberty St #3B
+NJ-4:NJ-4
+21:Church Street #21
+Uniti:3rd Ave, New York, NY 10028, Stati Uniti
+NY:West 49th Street New York NY
+1B:26th Avenue #1B
+800a:W 36th St #800a
+1807:5th AVE 1807
+USA:424 5th Avenue, 10018 NY, USA
+205:Broadway #205
+I:E Putnam Ave #I
+7:NJ-34 #7
+B:W 47th St #B
+21G:East 80th Street, 21G
+A:149th Street #A
+Level:Madison Ave Arcage Level
+Slip:Peck Slip
+Prabhadevi:12th Floor, Krypton Tower, Prabhadevi
+Lafayette:Lafayette
+2:S Broadway #2
+Walkway:Hoboken Newport Walkway- Hudson River Waterfront Walkway
+US:US
+Row:Park Row
+NJ-27:NJ-27
+NJ-27:NJ-27
+NJ-27:NJ-27
+1:Cushing St # 1
+C:Liberty Avenue #C
+A:Cypress Avenue #A
+1204:Journal Square #1204
+LC:E 72nd St #LC
+1H:W 56th St #1H
+D:S Oyster Bay Rd #D
+Floor:W 56th St 2nd Floor
+34:New Jersey 34
+Greenlawn:Broadway Greenlawn
+507:Mott St #507
+340:route 340
+M1:7th Ave #M1
+900:West 27th Street #900
+A:N Wood Ave #A
+106B:Lincoln Highway #106B
+12:Main St #12
+A28:wyckoff ave unit A28
+2A:National Boulevard #2A
+109:Central Park South Suite 109
+4CF:Joralemon Street, #4CF
+floor:DeKalb Avenue 4 floor
+400:East 25th Street Ste 400
+107:Nostrand Avenue,  #107
+200:Coney Island Avenue, Ste 200
+1a:Lexington Ave, #1a
+1B:East 64th Street, #1B
+605:West 57th Street #605
+403:East 25th Street  #403
+301:E 55th St Ste. 301
+3:16th Street # 3
+Floor:Dekalb Ave, 2nd Floor
+Unidos:340 Convent Ave, New York, NY 10031, Estados Unidos
+7:Woodbridge Ave #7
+Floor:Old Kings Hwy S 2nd Floor
+2:W 79th St #2
+Floor:Hillside Avenue 2nd Floor
+3-100A:NJ-17 #3-100A
+2E:10th Ave #2E
+Yards:Hudson Yards
+C:Hempstead Turnpike Suite C
+D:High Ridge Rd #D
+207:Broadhollow Rd #207
+1A:Barnes Ave #1A
+Pl:Gleeson Pl
+400:Watermill Ln #400
+B:Jefferson Ave #B
+10C:78th #10C
+1:36th St Front 1
+5:Jernee Mill Rd #5
+Brooklyn:334 Furman St, Brooklyn
+Ln:Andrews Ln
+603:queens bl ste 603
+C:135 W Forest Ave #C
+Floor:Union St, 2nd Floor
+201a:Tices Lane #201a
+STREET:303 EAST 158th STREET
+101:20th Ave, Suite 101
+5:Brunswick St, Ste 5
+B:East 25th St, 4th Floor, Ste B
+ST:110 SIXTH AVE. AT WATTS ST
+Gate:Wantagh Oaks Gate
+Hudson:Castle Point on Hudson
+109:Route 109
+Slip:Old Slip
+Greenway:Flatbush Avenue Greenway
+NJ4:NJ4
+17:Route 17
+25A:Route 25A
+Dien:North Van Dien
+west:State Route 10 west
+NJ):US 1 (NJ)
+9:U.S. 9
+22:US 22
+Row:Park Row
+Maple:North Maple
+Main:W Main
+Pl:Saint Marys Pl
+Americas:Avenue of Americas
+road:JFK Access road
+633:633
+Avenue,#392:Columbus Avenue,#392
+AVenue:Wantagh AVenue
+10:Route 10
+10:Route 10
+NJ):US 1 South (NJ)
+1:U.S. Highway 1
+Ridgewood:East Ridgewood
+Chestnut:Chestnut
+18:NJ 18
+25A:State Highway 25A
+1:US Highway 1
+1:North US Highway 1
+1:US 1
+S-512:800 Westchester Ave., Suite S-512
+208:Route 208
+46:Route 46
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+Bayside:Bayside
+17:Route 17
+17:Route 17
+17:Route 17
+22:US 22
+Rb:Linden Boulevard Outer Eb Rb
+Beach:Crescent Beach
+Beach:Crescent Beach
+Beach:Crescent Beach
+Beach:Crescent Beach
+Beach:Crescent Beach
+Beach:Crescent Beach
+Beach:Crescent Beach
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Gardens:Colonial Gardens
+Causeway:College Point Causeway
+Causeway:College Point Causeway
+Causeway:College Point Causeway
+Causeway:College Point Causeway
+218650358:218650358
+MetroTech:MetroTech
+Streeet:Johnson Streeet
+MetroTech:MetroTech
+MetroTech:MetroTech
