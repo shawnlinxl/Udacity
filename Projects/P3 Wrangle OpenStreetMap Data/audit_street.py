@@ -2,6 +2,7 @@ import xml.etree.cElementTree as ET
 from collections import defaultdict
 import re
 import pprint
+import string
 
 OSMFILE = "sample.osm"
 street_type_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
@@ -9,8 +10,12 @@ street_type_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
 
 expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road", 
             "Trail", "Parkway", "Commons"]
+upper_case_letter = list(string.ascii_uppercase)
+AlphabetAvenue = ["Avenue " + x for x in upper_case_letter]
 
 def audit_street_type(street_types, street_name):
+    if street_name in AlphabetAvenue:
+        return None
     m = street_type_re.search(street_name)
     if m:
         street_type = m.group()
