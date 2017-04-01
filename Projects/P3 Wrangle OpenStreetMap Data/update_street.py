@@ -2,39 +2,62 @@ import xml.etree.cElementTree as ET
 from collections import defaultdict
 import re
 import pprint
+import schema
+import string
+import csv
+import codecs
+import cerberus
 
-OSMFILE = "sample.osm"
-street_type_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
+OSM_PATH = "sample.osm"
+
+NODES_PATH = "nodes.csv"
+NODE_TAGS_PATH = "nodes_tags.csv"
+WAYS_PATH = "ways.csv"
+WAY_NODES_PATH = "ways_nodes.csv"
+WAY_TAGS_PATH = "ways_tags.csv"
+
+LOWER_COLON = re.compile(r'^([a-z]|_)+:([a-z]|_)+')
+PROBLEMCHARS = re.compile(r'[=\+/&<>;\'"\?%#$@\,\. \t\r\n]')
+
+SCHEMA = schema.schema  # Database schema
+
+# Make sure the fields order in the csvs matches the column order in the sql table schema
+NODE_FIELDS = ['id', 'lat', 'lon', 'user', 'uid', 'version', 'changeset', 'timestamp']
+NODE_TAGS_FIELDS = ['id', 'key', 'value', 'type']
+WAY_FIELDS = ['id', 'user', 'uid', 'version', 'changeset', 'timestamp']
+WAY_TAGS_FIELDS = ['id', 'key', 'value', 'type']
+WAY_NODES_FIELDS = ['id', 'node_id', 'position']
+
 
 # ================================================== #
 #               Street Variables                     #
 # ================================================== #
 expected_street_names = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road", 
-            "Trail", "Parkway", "Commons", "Broadway", "Center", "Circle", "Concourse", "Crescent",
-            "Cove", "East", "Esplanade", "Green", "Highway", "Loop", "Mews", "North", "Park", "Path", 
-            "Plaza", "Promenade", "Point", "South", "Terrace", "Turnpike", "Village", "Walk", "Way",
-            "West"]
+                         "Trail", "Parkway", "Commons", "Broadway", "Center", "Circle", "Concourse", "Crescent",
+                         "Cove", "East", "Esplanade", "Green", "Highway", "Loop", "Mews", "North", "Park", "Path", 
+                         "Plaza", "Promenade", "Point", "South", "Terrace", "Turnpike", "Village", "Walk", "Way",
+                         "West"]
 upper_case_letter = list(string.ascii_uppercase)
 AlphabetAvenue = ["Avenue " + x for x in upper_case_letter] # Handles avenues named "Avenue A" etc
-
-# UPDATE THIS VARIABLE
+street_type_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
+# Used to update street name formats
 mapping_street = { "St": "Street",
-            "St.": "Street",
-            "Rd.": "Road",
-            "ROAD": "Road",
-            "Ave": "Avenue",
-            "Cir": "Circle",
-            "Cres": "Crescent",
-            "Cv": "Cove",
-            "Pkwy": "Parkway",
-            "Plz": "Plaza",
-            "Prom": "Promenade",
-            "Pt": "Point",
-            "Tpke": "Turnpike",
-            "N": "North",
-            "S": "South",
-            "E": "East",
-            "W": "West"}
+                   "St.": "Street",
+                   "Rd.": "Road",
+                   "ROAD": "Road",
+                   "Ave": "Avenue",
+                   "Cir": "Circle",
+                   "Cres": "Crescent",
+                   "Cv": "Cove",
+                   "Pkwy": "Parkway",
+                   "Plz": "Plaza",
+                   "Prom": "Promenade",
+                   "Pt": "Point",
+                   "Tpke": "Turnpike",
+                   "N": "North",
+                   "S": "South",
+                   "E": "East",
+                   "W": "West"}
 
 def need_update_street(street_name,expected,special):
     """
@@ -58,24 +81,41 @@ def is_street_name(elem):
     return (elem.attrib['k'] == "addr:street")
 
 def update_name(name, mapping):
+    """
+    Use mapping to update nonconforming street names
+    """
     mapping = dict((re.escape(k), v) for k, v in mapping.iteritems())
     pattern = re.compile("|".join(mapping.keys()))
     name = pattern.sub(lambda m: mapping[re.escape(m.group(0))], name)
     return name
 
 def street_name(name,mapping,expected,special):
+    """
+    Formats street names
+    """
     if need_update_street(name,expected,special):
         return update_name(name,mapping)
     else:
         return name
 
+
+# ================================================== #
+#               Output Formatting                    #
+# ================================================== #
+
 def attrib_element(element, attr_fields):
+    """
+    Process output for node and way
+    """
     res = dict.fromkeys(attr_fields)
     for attribute in attr_fields:
         res[attribute] = element.attrib[attribute]
     return res
 
 def attrib_secondary(element,secondary,default_tag_type):
+    """
+    Processs tags for node and way
+    """
     res = {}
     res['id'] = element.attrib['id']
     if ":" not in secondary.attrib['k']:
@@ -122,6 +162,46 @@ def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIE
             else:
                 tags.append(attrib_secondary(element,tag,default_tag_type))
         return {'way': way_attribs, 'way_nodes': way_nodes, 'way_tags': tags}
+
+
+# ================================================== #
+#               Helper Functions                     #
+# ================================================== #
+def get_element(osm_file, tags=('node', 'way', 'relation')):
+    """Yield element if it is the right type of tag"""
+
+    context = ET.iterparse(osm_file, events=('start', 'end'))
+    _, root = next(context)
+    for event, elem in context:
+        if event == 'end' and elem.tag in tags:
+            yield elem
+            root.clear()
+
+
+def validate_element(element, validator, schema=SCHEMA):
+    """Raise ValidationError if element does not match schema"""
+    if validator.validate(element, schema) is not True:
+        field, errors = next(validator.errors.iteritems())
+        message_string = "\nElement of type '{0}' has the following errors:\n{1}"
+        error_string = pprint.pformat(errors)
+        
+        raise Exception(message_string.format(field, error_string))
+
+
+class UnicodeDictWriter(csv.DictWriter, object):
+    """Extend csv.DictWriter to handle Unicode input"""
+
+    def writerow(self, row):
+        super(UnicodeDictWriter, self).writerow({
+            k: (v.encode('utf-8') if isinstance(v, unicode) else v) for k, v in row.iteritems()
+        })
+
+    def writerows(self, rows):
+        for row in rows:
+            self.writerow(row)
+
+
+
 
 # ================================================== #
 #               Main Function                        #
